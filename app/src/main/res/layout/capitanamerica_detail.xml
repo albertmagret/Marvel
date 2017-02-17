@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="comics.marvel.CapitanAmericaDetailFragment"
+    android:background="@color/colorBackGround">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout android:id="@+id/relativeLayout_image_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ProgressBar android:id="@+id/capitanamerica_detail_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:padding="16dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/capitanamerica_detail_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:padding="16dp"
+                    android:textIsSelectable="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/capitanamerica_detail"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/relativeLayout_image_id"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
